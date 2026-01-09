@@ -44,37 +44,12 @@ CRUD-heavy business logic
 | CI/CD           | GitHub Actions          |
 | Version Control | Git                     |
 
+
 opencart-automation-suite
-│
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   ├── config        → Environment & config readers
-│   │   │   ├── core          → Driver factory & base classes
-│   │   │   ├── utils         → Common utilities (waits, retries)
-│
-│   ├── test
-│   │   ├── java
-│   │   │   ├── runners      → Cucumber TestNG runners
-│   │   │   ├── stepdefs     → Step definition classes
-│   │   │   ├── hooks        → Before/After hooks
-│   │   │   ├── pages        → Page Object classes
-│   │   │   ├── api          → API step definitions
-│   │
-│   │   ├── resources
-│   │   │   ├── features     → Cucumber feature files
-│   │   │   │   ├── ui
-│   │   │   │   ├── api
-│   │   │   └── config       → Properties files
-│
-├── .github
-│   └── workflows
-│       └── ci.yml           → GitHub Actions pipeline
-│
-├── pom.xml
-├── testng.xml
-├── README.md
-└── .gitignore
+
+
+<img width="294" height="573" alt="image" src="https://github.com/user-attachments/assets/a67488b4-a7e3-4241-9b15-e0d59309fd97" />
+
 
 🧠 Framework Design Highlights
 ✔ BDD with Cucumber
