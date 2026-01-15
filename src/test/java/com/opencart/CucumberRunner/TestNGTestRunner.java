@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"com.opencart.StepDefinitions","com.opencart.TestComponents"},
         tags = "@Login",
         monochrome = true,
-        plugin = {"pretty", "html:target/cucumber-reports.html"}
+        plugin = {"pretty", "html:target/cucumber-reports.html", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
 public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 }
