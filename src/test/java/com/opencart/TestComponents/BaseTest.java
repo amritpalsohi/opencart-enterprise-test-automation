@@ -2,12 +2,14 @@ package com.opencart.TestComponents;
 
 import com.opencart.PageObjects.LoginPage;
 import com.opencart.PageObjects.unAuthLandingPage;
+import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,7 +28,7 @@ public class BaseTest {
         FileInputStream fis = new FileInputStream("src/main/java/com/opencart/Resources/GlobalData.properties");
         property.load(fis);
 
-        String browserName = property.getProperty("browserName");
+        String browserName = property.getProperty("Browser");
 
         if(browserName.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "src/main/java/com/opencart/Resources/chromedriver-win64/chromedriver.exe");
@@ -51,6 +53,7 @@ public class BaseTest {
         return driver;
     }
 
+    @Before
     public void launchApplication() throws IOException {
         Properties property = new Properties();
         FileInputStream fis = new FileInputStream("src/main/java/com/opencart/Resources/GlobalData.properties");

@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/java/com/opencart/FeatureFiles",
-        glue = {"com.opencart.StepDefinitions"},
-        tags = "@RegressionTest",
+        glue = {"com.opencart.StepDefinitions","com.opencart.TestComponents"},
+        tags = "@Login",
         monochrome = true,
         plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
-public class TestRunner extends AbstractTestNGCucumberTests{
+public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 }

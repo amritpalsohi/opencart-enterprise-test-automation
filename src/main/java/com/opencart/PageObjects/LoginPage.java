@@ -34,4 +34,8 @@ public class LoginPage extends WaitComponents {
         passwordField.sendKeys(password);
         loginButton.click();
     }
+
+    public String getPageURL(){
+        return driver.getCurrentUrl();
+    }
 }
