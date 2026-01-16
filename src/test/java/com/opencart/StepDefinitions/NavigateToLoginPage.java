@@ -5,6 +5,8 @@ import com.opencart.TestComponents.BaseTest;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
 
+import static com.opencart.TestComponents.BaseTest.log;
+
 public class NavigateToLoginPage {
 
     WebDriver driver;
@@ -21,8 +23,8 @@ public class NavigateToLoginPage {
 
     @Given("Navigate to login page")
     public void navigateToLoginPage() {
-
         loginPage = BaseTest.unAuthPage.clickLoginLink();
+        log.info("Navigating to login page");
 
     }
 }

@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 
 import java.io.IOException;
 
+import static com.opencart.TestComponents.BaseTest.log;
 import static org.testng.Assert.assertTrue;
 
 
@@ -28,6 +29,7 @@ public class LoginToOpenCart {
     public void loginToOpenCart(String feature) throws IOException {
         LoginPage loginPage = NavigateToLoginPage.loginPage;
 
+        log.info("Logging in with provided credentials");
         String username = testDataUtility.getTestData(feature).get(0).toString();
         String password = testDataUtility.getTestData(feature).get(1).toString();
         loginPage.loginToAccount(username,password);

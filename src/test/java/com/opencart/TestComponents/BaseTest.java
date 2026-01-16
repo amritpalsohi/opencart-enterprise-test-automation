@@ -17,10 +17,15 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class BaseTest {
 
     public static WebDriver driver;
     public static unAuthLandingPage unAuthPage;
+
+    public static final Logger log = LogManager.getLogger(BaseTest.class);
 
     public WebDriver InitializeDriver() throws IOException {
 
@@ -30,6 +35,7 @@ public class BaseTest {
 
         String browserName = property.getProperty("Browser");
 
+        log.info("Initializing driver based on browser configuration");
         if(browserName.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "src/main/java/com/opencart/Resources/chromedriver-win64/chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
@@ -43,6 +49,8 @@ public class BaseTest {
         }else if(browserName.equalsIgnoreCase("Edge")) {
             System.setProperty("webdriver.edge.driver", "src/main/java/com/opencart/Resources/msedgedriver.exe");
             driver = new EdgeDriver();
+        }else{
+            log.error("Browser not supported");
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -64,10 +72,13 @@ public class BaseTest {
         driver = InitializeDriver();
         unAuthPage = new unAuthLandingPage(driver);
 
+        log.info("Launching application based on environment configuration");
         if(environment.equalsIgnoreCase("PROD")) {
             unAuthPage.loadOpenCartApplication("https://www.opencart.com/");
         }else if(environment.equalsIgnoreCase("QA")) {
             unAuthPage.loadOpenCartApplication("test.com");
+        }else{
+            log.error("Environment not supported");
         }
     }
 

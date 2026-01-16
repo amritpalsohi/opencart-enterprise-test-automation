@@ -1,0 +1,4 @@
+2026-01-15 22:20:56.179 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-15 22:21:06.178 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-15 22:21:17.123 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-15 22:21:17.287 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
