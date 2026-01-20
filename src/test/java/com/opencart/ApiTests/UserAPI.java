@@ -1,4 +1,4 @@
-package com.opencart.StepDefinitions;
+package com.opencart.ApiTests;
 
 import com.opencart.Models.Request.CreateUserRequest;
 import com.opencart.Models.Response.CreateUserResponse;

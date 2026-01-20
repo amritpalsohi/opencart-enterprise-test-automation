@@ -61,7 +61,7 @@ public class BaseTest {
         return driver;
     }
 
-    @Before
+    //@Before
     public void launchApplication() throws IOException {
         Properties property = new Properties();
         FileInputStream fis = new FileInputStream("src/main/java/com/opencart/Resources/GlobalData.properties");

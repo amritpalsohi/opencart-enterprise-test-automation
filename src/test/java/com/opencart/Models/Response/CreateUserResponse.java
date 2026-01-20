@@ -1,5 +1,8 @@
 package com.opencart.Models.Response;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CreateUserResponse {
 
     private int id;

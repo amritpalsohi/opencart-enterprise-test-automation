@@ -2,3 +2,14 @@
 2026-01-15 22:21:06.178 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
 2026-01-15 22:21:17.123 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
 2026-01-15 22:21:17.287 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-19 21:08:12.140 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-19 21:08:28.824 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-19 21:08:49.374 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-19 21:08:49.418 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-19 21:46:29.172 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-19 21:46:45.317 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-19 22:05:03.633 [main] INFO  com.opencart.TestComponents.BaseTest - com.opencart.Models.Response.CreateUserResponse@2a0a178f
+2026-01-19 22:10:05.043 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
