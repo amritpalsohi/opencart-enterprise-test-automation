@@ -23,7 +23,7 @@ public class NavigateToLoginPage {
 
     @Given("Navigate to login page")
     public void navigateToLoginPage() {
-        loginPage = BaseTest.unAuthPage.clickLoginLink();
+        loginPage = BaseTest.getUnAuthPage().clickLoginLink();
         log.info("Navigating to login page");
 
     }

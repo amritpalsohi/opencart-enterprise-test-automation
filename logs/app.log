@@ -13,3 +13,28 @@
 2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
 2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
 2026-01-19 22:10:05.058 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-21 21:27:25.532 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-21 21:27:25.548 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-21 21:27:25.548 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-21 21:27:25.548 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-21 21:34:32.032 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-21 21:34:32.043 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-21 21:34:32.043 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-21 21:34:32.044 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-21 21:39:20.983 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-21 21:39:20.999 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-21 21:39:20.999 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-21 21:39:20.999 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-21 21:46:23.421 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-21 21:46:23.434 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-21 21:46:23.434 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-21 21:46:23.434 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-21 21:50:56.485 [main] INFO  com.opencart.TestComponents.BaseTest - 1
+2026-01-21 21:50:56.501 [main] INFO  com.opencart.TestComponents.BaseTest - test001@mailinator.com
+2026-01-21 21:50:56.501 [main] INFO  com.opencart.TestComponents.BaseTest - First_Test
+2026-01-21 21:50:56.501 [main] INFO  com.opencart.TestComponents.BaseTest - Last_Test
+2026-01-24 00:26:08.308 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-24 00:26:17.629 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-24 00:26:27.768 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-24 00:26:27.820 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-24 00:26:50.356 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@77fa509a

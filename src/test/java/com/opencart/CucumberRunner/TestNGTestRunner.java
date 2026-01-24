@@ -6,7 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/com/opencart/FeatureFiles",
         glue = {"com.opencart.StepDefinitions","com.opencart.TestComponents"},
-        tags = "@CreateUserApi",
+        //tags = "@getapitest",
+        tags = "@Login @getapitest",
         monochrome = true,
         plugin = {"pretty", "html:target/cucumber-reports.html", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )

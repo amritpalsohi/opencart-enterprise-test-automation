@@ -22,12 +22,20 @@ import org.apache.logging.log4j.Logger;
 
 public class BaseTest {
 
-    public static WebDriver driver;
-    public static unAuthLandingPage unAuthPage;
+    private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
+    private static final ThreadLocal<unAuthLandingPage> UNAUTH_PAGE = new ThreadLocal<>();
 
     public static final Logger log = LogManager.getLogger(BaseTest.class);
 
-    public WebDriver InitializeDriver() throws IOException {
+    public static WebDriver getDriver(){
+        return DRIVER.get();
+    }
+
+    public static unAuthLandingPage getUnAuthPage(){
+        return UNAUTH_PAGE.get();
+    }
+
+    public static WebDriver InitializeDriver() throws IOException {
 
         Properties property = new Properties();
         FileInputStream fis = new FileInputStream("src/main/java/com/opencart/Resources/GlobalData.properties");
@@ -36,6 +44,7 @@ public class BaseTest {
         String browserName = property.getProperty("Browser");
 
         log.info("Initializing driver based on browser configuration");
+        WebDriver driver;
         if(browserName.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "src/main/java/com/opencart/Resources/chromedriver-win64/chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
@@ -51,39 +60,47 @@ public class BaseTest {
             driver = new EdgeDriver();
         }else{
             log.error("Browser not supported");
+            throw new IllegalArgumentException("Browser not supported: " + browserName);
+
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
 
-
+        DRIVER.set(driver);
         return driver;
     }
 
-    //@Before
-    public void launchApplication() throws IOException {
+    @Before
+    public static void launchApplication() throws IOException {
         Properties property = new Properties();
         FileInputStream fis = new FileInputStream("src/main/java/com/opencart/Resources/GlobalData.properties");
         property.load(fis);
 
         String environment = property.getProperty("Environment");
 
-        driver = InitializeDriver();
-        unAuthPage = new unAuthLandingPage(driver);
+        WebDriver driver = InitializeDriver();
+        UNAUTH_PAGE.set(new unAuthLandingPage(driver));
 
         log.info("Launching application based on environment configuration");
         if(environment.equalsIgnoreCase("PROD")) {
-            unAuthPage.loadOpenCartApplication("https://www.opencart.com/");
+            UNAUTH_PAGE.get().loadOpenCartApplication("https://www.opencart.com/");
         }else if(environment.equalsIgnoreCase("QA")) {
-            unAuthPage.loadOpenCartApplication("test.com");
+            UNAUTH_PAGE.get().loadOpenCartApplication("test.com");
         }else{
             log.error("Environment not supported");
+            throw new IllegalArgumentException("Environment not supported: " + environment);
         }
     }
 
-    public void closeDriver() {
-        driver.close();
+    public static void closeDriver() {
+        WebDriver driver = DRIVER.get();
+        if (driver != null) {
+            driver.quit();
+        }
+        DRIVER.remove();
+        UNAUTH_PAGE.remove();
     }
 
 }

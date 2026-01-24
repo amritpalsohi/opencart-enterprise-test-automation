@@ -1,4 +1,4 @@
-@CreateUserApi
+@apitest
 Feature: Create User API
 
   Scenario Outline: Validate create user API
