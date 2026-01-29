@@ -1,4 +1,4 @@
-@Login
+@Login @SmokeTest
   Feature: Login to Open Cart
 
     Background:

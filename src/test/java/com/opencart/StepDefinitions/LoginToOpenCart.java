@@ -5,6 +5,7 @@ import com.opencart.Resources.TestDataUtility;
 import com.opencart.TestComponents.BaseTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 
 import java.io.IOException;
 
@@ -14,30 +15,32 @@ import static org.testng.Assert.assertTrue;
 
 public class LoginToOpenCart {
 
-    //LoginPage loginPage = NavigateToLoginPage.loginPage;
-
     TestDataUtility testDataUtility = new TestDataUtility();
+    LoginPage loginPage = NavigateToLoginPage.loginPage;
 
     @Given("User is landed on login page")
     public void userIsLandedOnLoginPage() {
-        LoginPage loginPage = NavigateToLoginPage.loginPage;
+
         String url= loginPage.getPageURL();
-        assertTrue(url.contains("login"));
+        assertTrue(url.contains("practice"));
     }
 
     @Given("^User enters username and password for (.+)$")
     public void loginToOpenCart(String feature) throws IOException {
-        LoginPage loginPage = NavigateToLoginPage.loginPage;
+        //LoginPage loginPage = NavigateToLoginPage.loginPage;
 
         log.info("Logging in with provided credentials");
         String username = testDataUtility.getTestData(feature).get(0).toString();
         String password = testDataUtility.getTestData(feature).get(1).toString();
         loginPage.loginToAccount(username,password);
+        log.info("Clicked on login button");
 
     }
 
     @Then("User is logged in the application")
     public void userIsLoggedInApplication(){
-        System.out.println("User is logged in the application");
+        String loginMessage = loginPage.validateLoginSuccessMessage();
+        log.info("Login message is: " + loginMessage);
+        Assert.assertEquals(loginMessage,"LOGIN SUCCESSFUL");
     }
 }

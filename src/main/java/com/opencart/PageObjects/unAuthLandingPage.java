@@ -16,11 +16,14 @@ public class unAuthLandingPage extends WaitComponents {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath="//*[@id=\"navbar-collapse-header\"]/div/a[1]")
+    @FindBy(css="li[id='login'] span[class='text flex-1']")
     WebElement loginLink;
 
-    @FindBy(xpath="//*[@id=\"navbar-collapse-header\"]/div/a[2]")
-    WebElement registerButton;
+    @FindBy(css="li[id='registration'] span[class='text flex-1']")
+    WebElement registerLink;
+
+    @FindBy(css="li[id='forgot-password'] span[class='text flex-1']")
+    WebElement forgotPasswordLink;
 
     public void loadOpenCartApplication(String url){
         driver.get(url);
@@ -33,9 +36,16 @@ public class unAuthLandingPage extends WaitComponents {
         return loginPage;
     }
 
-    public void clickRegisterButton(){
-        waitForElementToAppear(registerButton);
-        registerButton.click();
+    public void clickRegisterLink(){
+        waitForElementToAppear(registerLink);
+        registerLink.click();
+    }
+
+    public ForgotPasswordPage forgotPasswordLink(){
+        waitForElementToAppear(forgotPasswordLink);
+        forgotPasswordLink.click();
+        ForgotPasswordPage forgotPassword = new ForgotPasswordPage(driver);
+        return forgotPassword;
     }
 
 }
