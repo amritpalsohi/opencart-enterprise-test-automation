@@ -164,3 +164,65 @@
 2026-01-28 21:49:52.624 [main] INFO  com.opencart.TestComponents.BaseTest - Clicked on login button
 2026-01-28 21:49:55.930 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: LOGIN SUCCESSFUL
 2026-01-28 21:49:56.270 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@2a97b4b8
+2026-01-30 12:35:26.223 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:35:30.775 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:35:31.199 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:45:12.257 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:45:34.934 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:45:45.506 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 12:45:55.986 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: CHECK EMAIL
+2026-01-30 12:45:56.275 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@5c39ec34
+2026-01-30 12:45:57.411 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:46:03.416 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:46:08.186 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-30 12:46:08.210 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-30 12:46:08.718 [main] INFO  com.opencart.TestComponents.BaseTest - Clicked on login button
+2026-01-30 12:46:11.327 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: LOGIN SUCCESSFUL
+2026-01-30 12:46:11.720 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@77a38cec
+2026-01-30 12:46:12.290 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:46:18.409 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:46:22.879 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 12:46:44.732 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@66a5a12c
+2026-01-30 12:56:03.081 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:56:19.273 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:56:28.419 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 12:56:36.067 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: CHECK EMAIL
+2026-01-30 12:56:36.302 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@f2bec99
+2026-01-30 12:56:36.817 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:56:42.980 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:56:48.315 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-30 12:56:48.331 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-30 12:56:48.942 [main] INFO  com.opencart.TestComponents.BaseTest - Clicked on login button
+2026-01-30 12:56:51.920 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: LOGIN SUCCESSFUL
+2026-01-30 12:56:52.486 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@a632ae0
+2026-01-30 12:56:53.235 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 12:56:58.119 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 12:57:03.808 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 12:57:04.621 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@50cf26b7
+2026-01-30 14:09:30.606 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 14:09:43.593 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 14:09:59.070 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 14:10:13.276 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: CHECK EMAIL
+2026-01-30 14:10:13.546 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@7856b790
+2026-01-30 14:10:16.327 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 14:10:25.998 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 14:10:37.869 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-30 14:10:37.891 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-30 14:10:38.683 [main] INFO  com.opencart.TestComponents.BaseTest - Clicked on login button
+2026-01-30 14:10:41.340 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: LOGIN SUCCESSFUL
+2026-01-30 14:10:41.747 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@12139db0
+2026-01-30 14:10:44.211 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 14:10:53.357 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 14:11:05.271 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 14:16:25.581 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 14:16:38.320 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 14:16:48.964 [main] INFO  com.opencart.TestComponents.BaseTest - Entering email address for reset password:
+2026-01-30 14:16:59.999 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: CHECK EMAIL
+2026-01-30 14:17:00.339 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@5891bd6d
+2026-01-30 14:17:04.269 [main] INFO  com.opencart.TestComponents.BaseTest - Initializing driver based on browser configuration
+2026-01-30 14:17:14.410 [main] INFO  com.opencart.TestComponents.BaseTest - Launching application based on environment configuration
+2026-01-30 14:17:22.321 [main] INFO  com.opencart.TestComponents.BaseTest - Navigating to login page
+2026-01-30 14:17:22.339 [main] INFO  com.opencart.TestComponents.BaseTest - Logging in with provided credentials
+2026-01-30 14:17:23.121 [main] INFO  com.opencart.TestComponents.BaseTest - Clicked on login button
+2026-01-30 14:17:25.532 [main] INFO  com.opencart.TestComponents.BaseTest - Login message is: LOGIN SUCCESSFUL
+2026-01-30 14:17:25.840 [main] INFO  com.opencart.TestComponents.BaseTest - Screenshot taken for io.cucumber.java.Scenario@5bf97be9
